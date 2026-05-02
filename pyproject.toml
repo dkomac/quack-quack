@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quack-quack"
+version = "0.1.0"
+description = "A duck that quacks in your terminal"
+requires-python = ">=3.8"
+
+[project.scripts]
+quack = "quack_quack.cli:main"
