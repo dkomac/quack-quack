@@ -13,7 +13,7 @@ A duck walks into your terminal, says something important, and leaves.
 ## Install
 
 ```bash
-pipx install quack-quack
+pipx install quacky
 ```
 
 ## Usage
