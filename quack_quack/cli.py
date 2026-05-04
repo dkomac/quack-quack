@@ -54,7 +54,7 @@ def walk_in():
     center = min((tw - DUCK_WIDTH) // 2, 20)
     for x in range(0, center + 1, 5):
         draw([DUCK_A, DUCK_B][(x // 5) % 2], x)
-        time.sleep(0.05)
+        time.sleep(0.1)
     return center
 
 
@@ -62,14 +62,14 @@ def quack(x):
     full = "QUACK QUACK!"
     for i in range(1, len(full) + 1):
         draw(DUCK_A, x, full[:i])
-        time.sleep(0.07)
-    time.sleep(0.8)
+        time.sleep(0.12)
+    time.sleep(1.0)
 
 
 def walk_out(x):
     for xx in range(x, x + 20, 5):
         draw([DUCK_A, DUCK_B][(xx // 5) % 2], xx)
-        time.sleep(0.05)
+        time.sleep(0.1)
     clear()
 
 
